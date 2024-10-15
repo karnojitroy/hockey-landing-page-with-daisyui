@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Landing Page</title>
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c39147c565.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font name -->
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <!-- customized color style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-red': '#FF4240',
+                        'color-black': '#131318',
+                        'color-gray': '#424247',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white font-manrope">
+    <!-- Header -->
+    <header class="lg:container mx-auto lg:px-24">
+        <!-- Navbar -->
+        <!--background color getting problem, that is why pt-14 has taken alternative to mt -->
+        <nav class="py-5">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-auto p-2 bg-color-gray bg-opacity-25 text-white shadow text-base font-normal text-color-gray">
+                            <li class="hover:text-color-red hover:font-semibold"><a>Home</a></li>
+                            <li class="hover:text-color-red hover:font-semibold"><a>About</a></li>
+                            <li class="hover:text-color-red hover:font-semibold"><a>Pages</a></li>
+                            <li class="hover:text-color-red hover:font-semibold"><a>Blog</a></li>
+                            <li class="hover:text-color-red hover:font-semibold"><a>Contact</a></li>
+                        </ul>
+
+                        </ul>
+                    </div>
+                    <a class="">
+                        <h3 class=" text-2xl md:text-4xl font-extrabold text-color-black">Hockey<span
+                                class="text-color-red">’</span>s</h3>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base font-normal text-color-gray">
+                        <li class="p-3 hover:text-color-red hover:font-semibold"><a>Home</a></li>
+                        <li class="p-3 hover:text-color-red hover:font-semibold"><a>About</a></li>
+                        <li class="p-3 hover:text-color-red hover:font-semibold"><a>Pages</a></li>
+                        <li class="p-3 hover:text-color-red hover:font-semibold"><a>Blog</a></li>
+                        <li class="p-3 hover:text-color-red hover:font-semibold"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-5">
+                    <i class="invisible lg:visible fa-solid fa-magnifying-glass text-color-gray h-6 w-6 pt-1"></i>
+                    <a class="btn text-xl font-bold bg-color-red text-white border-none">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main></main>
+    <!-- Footer -->
+    <footer></footer>
+</body>
+
+</html>
